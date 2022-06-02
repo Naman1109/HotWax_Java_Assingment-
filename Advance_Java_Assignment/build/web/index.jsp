@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
      <head>
  
@@ -9,7 +10,8 @@
         <style>
             body
             {
-                background-image: url('BG2.webp')
+                background-color: antiquewhite;
+                    
             }
    #nav
    {
@@ -49,6 +51,10 @@
         <hr>
         <hr>
     </nav>
+        <div>
+            
+            
+        </div>
         
         </div>
 </body>
