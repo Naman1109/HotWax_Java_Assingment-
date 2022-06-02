@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
+        <!---<title> Responsive Registration Form | CodingLab </title>--->
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -158,24 +161,61 @@
 
         </style>
 
+
+        <%
+            String email = (String) session.getAttribute("email");
+        %>
+
         <!--fname,lname,email,address,city,state,country,zip,phone,password-->
 
         <div class="container">
-            <div class="title">Delete User</div>
+            <div class="title">Update</div>
             <div class="content">
-                <form action="delete_info_db.jsp">
+                <form action="update_info_db.jsp">
                     <div class="user-details">
                         <div class="input-box">
-                            <span class="details">Email</span>
-                            <input type="text" name="email" placeholder=" Email" required>
+                            <span class="details">First Name</span>
+                            <input type="text" name="fname" placeholder="Enter your First name" required>
                         </div>
                         <div class="input-box">
-                            <span class="details">First Name</span>
-                            <input type="text" name="fname" placeholder="First Name" required>
+                            <span class="details">Last Name</span>
+                            <input type="text" name="lname" placeholder="Enter your Last name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" name="email" placeholder="Enter your Email" value= <%=email%> required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Address</span>
+                            <input type="text" name="address" placeholder="Enter your Address" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">City</span>
+                            <input type="text" name="city" placeholder="Enter your City" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">State</span>
+                            <input type="text" name="state" placeholder="Enter your State" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Country</span>
+                            <input type="text" name="country" placeholder="Enter your Country" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Zip</span>
+                            <input type="text" name="zip" placeholder="Enter your Zip" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone</span>
+                            <input type="text"  name="phone" placeholder="Enter your Phone" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="password" name="password" placeholder=" password" required>
                         </div>
                     </div>
                     <div class="button">
-                        <input type="submit" value="Find">
+                        <input type="submit" value="update">
                     </div>
                 </form>
             </div>
@@ -183,3 +223,8 @@
 
     </body>
 </html>
+
+
+
+
+

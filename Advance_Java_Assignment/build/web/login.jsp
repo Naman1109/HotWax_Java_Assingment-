@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        
 
         <style>
 
@@ -157,6 +158,8 @@
             }
 
         </style>
+        
+        
 
         <!--fname,lname,email,address,city,state,country,zip,phone,password-->
 

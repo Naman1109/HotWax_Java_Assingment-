@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        
 
         <style>
 
@@ -159,6 +160,9 @@
         </style>
 
         <!--fname,lname,email,address,city,state,country,zip,phone,password-->
+          <%
+            String email = (String) session.getAttribute("email");
+        %>
 
         <div class="container">
             <div class="title">Find User</div>
@@ -167,7 +171,7 @@
                     <div class="user-details">
                         <div class="input-box">
                             <span class="details">Email</span>
-                            <input type="text" name="email" placeholder=" Email" required>
+                            <input type="text" name="email"  placeholder=" Email" value= <%=email%> required >
                         </div>
                         <div class="input-box">
                             <span class="details">First Name</span>

@@ -121,5 +121,23 @@ public class userdao {
         con.close();
         return i;
     }
-
+    //////////////////////////////////////////////////////
+    
+public int updateinfo(userdto obj, String  email) throws SQLException {
+        Connection con = GetConnection.getConnect();
+        String query = "update usere set fname = ?,lname= ?,address= ?,city= ?,state= ?,country= ?,zip= ?,phone= ?,password = ? where email= ? ";
+        PreparedStatement ps = con.prepareStatement(query);
+        ps.setString(1, obj.getFname());
+        ps.setString(2, obj.getLname());
+        ps.setString(3, obj.getAddress());
+        ps.setString(4, obj.getCity());
+        ps.setString(5, obj.getState());
+        ps.setString(6, obj.getCountry());
+        ps.setString(7, obj.getZip());
+        ps.setString(8, obj.getPhone());
+        ps.setString(9, obj.getPassword());
+        ps.setString(10, email);        
+        int i = ps.executeUpdate();
+        return i;
+    }
 }

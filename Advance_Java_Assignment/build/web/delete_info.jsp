@@ -161,7 +161,7 @@
         <!--fname,lname,email,address,city,state,country,zip,phone,password-->
 
         <div class="container">
-            <div class="title">Find User</div>
+            <div class="title">Delete User</div>
             <div class="content">
                 <form action="delete_info_db.jsp">
                     <div class="user-details">
