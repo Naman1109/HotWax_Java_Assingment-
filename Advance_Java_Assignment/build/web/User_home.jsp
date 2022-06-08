@@ -1,4 +1,28 @@
 <html>
+    <head>
+        <style>
+            
+            body
+            {
+                background-color: bisque;
+                color: black;
+                
+            }
+            #para
+            {
+                color: black;
+                background-color:blanchedalmond; 
+                margin: 30px 30px 30px ;
+            }
+            .para
+            {
+                
+                margin: 30px 30px 30px ;
+            }
+        </style>
+            
+        
+    </head>
     <body>
         <div id="index">	
  <center>
@@ -15,16 +39,16 @@
     </center>
             <div>	
 
-                <div>	
+                <div class="para">	
                     <%
                         String email = (String) session.getAttribute("email");
                     %>
                     <h2 class="title">Welcome , <%=email%></h2>
                     <div class="content">
-                        <p>
+                        <div id="para">
                             Welcome to the Java Web Application, This application performed all <strong>crud</strong> operation and have also have functionality of <strong> session management </strong> with customized web View.
                    
-                        </p>
+                            </div>
                         
                        
                     </div>

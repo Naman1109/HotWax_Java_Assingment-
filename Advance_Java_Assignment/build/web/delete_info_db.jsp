@@ -8,8 +8,8 @@
 //        session.setAttribute("email", email);
 %>
 <script>alert("Delete Successfully..!")</script>
-<jsp:include page="index.jsp"></jsp:include>
+<jsp:include page="User_home.jsp"></jsp:include>
 <%} else {%>
 <script>alert("Error while Deleting ..!")</script>
-<jsp:include page="index.jsp"></jsp:include>
+<jsp:include page="User_home.jsp"></jsp:include>
 <%}%>

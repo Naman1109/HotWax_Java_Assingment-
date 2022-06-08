@@ -175,7 +175,7 @@
                         </div>
                     </div>
                     <div class="button">
-                        <input type="submit" value="Find">
+                        <input type="submit" value="Delete">
                     </div>
                 </form>
             </div>
