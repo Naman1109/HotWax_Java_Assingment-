@@ -1,0 +1,50 @@
+*{
+                
+                box-sizing: border-box;
+                /*font-family: 'Poppins',sans-serif;*/
+            }
+            
+            body
+            {
+                background-color: bisque;
+                     /*background: linear-gradient(135deg, #71b7e6, #9b59b6);*/
+                color: black;
+                
+                height: 100vh;
+                /*display: flex;*/
+                /*justify-content: center;*/
+                /*align-items: center;*/
+                /*padding: 10px;*/
+                background:bisque;
+            }
+                       #buttonup
+    {
+        border: 2px solid black;
+        border-radius: 8px;
+        background-color: burlywood;
+        margin-right: 5px;
+        
+    }
+            #para
+            {
+                color: black;
+                background-color:blanchedalmond; 
+                margin: 30px 30px 30px ;
+            }
+            .para
+            {
+                
+                margin: 30px 30px 30px ;
+            }
+       #divH
+       {
+           
+        text-align: center;
+           
+       }
+       #hading
+       {
+           text-decoration: underline;
+           
+       }
+    
