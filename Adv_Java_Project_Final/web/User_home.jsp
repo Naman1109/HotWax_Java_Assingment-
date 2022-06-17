@@ -6,6 +6,9 @@
 
     </head>
     <body>
+         <%
+                        String fname = (String) session.getAttribute("fname");
+                    %>
         <div id="divH">
             <h1 id="hading">Advance Java Assignment</h1>
         </div>
@@ -27,7 +30,7 @@
             <div>	
 
                 <div class="para">	
-                    <h2 class="title">Welcome</h2>
+                    <h2 class="title">Welcome,<%=fname %></h2>
                     <div class="content">
                         <div id="para">
                             Welcome to the Java Web Application, This application performed all <strong>crud</strong> operation and have also have functionality of <strong> session management </strong> with customized web View.

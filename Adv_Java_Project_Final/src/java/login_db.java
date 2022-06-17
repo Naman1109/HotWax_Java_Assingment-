@@ -1,7 +1,6 @@
 
 import java.io.*;
 import javax.servlet.*;
-import javax.swing.*;
 import javax.servlet.http.*;
 import java.sql.*;
 
@@ -29,12 +28,12 @@ public class login_db extends HttpServlet {
                 HttpSession session = Request.getSession();
                 session.setAttribute("fname", fname);
 
-                out.write("<script>alert(\"User Loged In...!\");</script>\n");
+           out.write("<script>alert(\"User Loged In...!\");</script>\n");
 
-                Response.sendRedirect("User_home.html");
+                Response.sendRedirect("User_home.jsp");
 //	out.write("<script>alert(\"User Loged In...!\");</script>\n");
             } else {
-                RequestDispatcher dis = Request.getRequestDispatcher("login.html");
+                RequestDispatcher dis = Request.getRequestDispatcher("login.jsp");
                 dis.include(Request, Response);
             }
             con.close();

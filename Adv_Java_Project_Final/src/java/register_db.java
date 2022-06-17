@@ -30,7 +30,7 @@ public class register_db extends HttpServlet {
             st.executeUpdate("insert into usere values('" + s1 + "','" + s2 + "','" + s3 + "','" + s4 + "','" + s5 + "','" + s6 + "','" + s7 + "','" + s8 + "','" + s9 + "','" + s10 + "')");
             con.close();
             out.write("<script>alert(\"User Added...!\");</script>\n");
-            response.sendRedirect("login.html");
+            response.sendRedirect("login.jsp");
             out.println("data insert");
         } catch (Exception e1) {
             out.println(e1);

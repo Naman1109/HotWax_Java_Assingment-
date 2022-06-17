@@ -28,7 +28,7 @@ public class delete extends HttpServlet {
             Connection con = DriverManager.getConnection(db_ur1, db_uname, db_upass);
             Statement st = con.createStatement();
             st.executeUpdate("delete from usere where email='" + s1 + "' and password = '" + s2 + "'");
-            Response.sendRedirect("User_home.html");
+            Response.sendRedirect("User_home.jsp");
         } catch (Exception e1) {
             out.println(e1);
         }

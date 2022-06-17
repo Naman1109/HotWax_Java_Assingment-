@@ -32,7 +32,7 @@ public class update extends HttpServlet {
             Connection con = DriverManager.getConnection(db_ur1, db_uname, db_upass);
             Statement st = con.createStatement();
             st.executeUpdate("UPDATE usere SET fname='" + s1 + "', lname='" + s2 + "',address='" + s4 + "', city='" + s5 + "',state='" + s6 + "', country='" + s7 + "',zip='" + s8 + "', phone='" + s9 + "'  where email='" + s3 + "'and password='" + s10 + "' ");
-            response.sendRedirect("User_home.html");
+            response.sendRedirect("User_home.jsp");
         } catch (Exception e1) {
             out.println(e1);
         }
